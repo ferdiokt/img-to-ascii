@@ -22,7 +22,13 @@ m | min_max
 l | luminosity
 e | enhanced luminosity
 ```
-#### Explanation:
+#### Style (default: white text)
+```
+m
+```
+If you want the ASCII char to be printed in green color a.k.a The Matrix style.
+
+### Explanation:
 
 **Average algorithm**  
 Converting RGB value to brightness intensity by averaging the RGB value:  
@@ -42,8 +48,10 @@ Same as the luminosity algorithm but give more weight to Red and Green value:
 
 Source: [RGB to Luminance](https://stackoverflow.com/questions/596216/formula-to-determine-perceived-brightness-of-rgb-color)
 
-#### Style (default: white text)
-```
-m
-```
-If you want the ASCII char to be printed in green color a.k.a The Matrix style.
+### Sample Result:
+**Sample Image**
+[Sample Image](./sample_image.jpg)
+
+**ASCII Image**
+[ASCII Image](./sample_ascii.png)
+
