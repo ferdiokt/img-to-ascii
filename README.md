@@ -50,8 +50,8 @@ Source: [RGB to Luminance](https://stackoverflow.com/questions/596216/formula-to
 
 ### Sample Result:
 **Sample Image**
-[Sample Image](./sample_image.jpg)
+![Sample Image](./sample_image.jpg)
 
 **ASCII Image**
-[ASCII Image](./sample_ascii.png)
+![ASCII Image](./sample_ascii.png)
 
