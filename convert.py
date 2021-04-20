@@ -57,13 +57,13 @@ def get_intensity(pixel, algorithm = 'luminosity'):
     for x in pixel:
         intensity_row = []
         for y in x:
-            if algorithm == 'average':
+            if algorithm == 'average' or algorithm == 'a':
                 intensity = (y[0] + y[1] + y[2])/3
-            elif algorithm == 'max_min':
+            elif algorithm == 'max_min' or algorithm == 'm':
                 intensity = (max(y) + min(y))/2
-            elif algorithm == 'luminosity':
+            elif algorithm == 'luminosity' or algorithm == 'l':
                 intensity = 0.21*y[0] + 0.72*y[1] + 0.07*y[2]
-            elif algorithm == 'luminosity_enh':
+            elif algorithm == 'luminosity_enh' or algorithm == 'e':
                 intensity = 0.299*y[0] + 0.587*y[1] + 0.114*y[2]
             else:
                 raise Exception(f"Unrecognized algorithm name: {algorithm}")
@@ -150,7 +150,7 @@ def convert_capture():
     ask_style = input("Do you want it to be printed in The Matrix Style [Y/N]? ").upper()
     
     if ask_style == 'Y':
-        print_ascii_img(img_ascii, 'm')
+        print_ascii_img(img_ascii, 'tm')
     elif ask_style == 'N':
         print_ascii_img(img_ascii)
     else:
